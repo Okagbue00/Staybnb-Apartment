@@ -1,0 +1,668 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,0.3)),url(/images/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 35px;
+
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: darkcyan;
+}
+
+.nav-links li a:hover{
+    background-color: #5f9e9e;
+}
+
+.register-btn{
+    background: #a2c9c9;
+    color: darkcyan;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.container{
+    padding: 0 8%;
+}
+
+.header h1{
+    font-size: 4vm;
+    font-weight: 600;
+    color: darkcyan;
+    text-align: center;
+    padding-top: 25%;
+}
+
+.search-bar{
+    background-color: #6ba8a8;
+    width: 80%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.search-bar form button{
+    background: #6ba8a8;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.search-bar form button img{
+    width: 15px;
+    margin-top: 7px;
+}
+
+.location-input{
+    flex: 1;
+}
+
+.search-bar form label{
+    font-weight: 600;
+}
+
+/*******Here is exclusives styling ********/
+
+.sub-title{
+    margin: 50px;
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: #6ba8a8;
+}
+
+.exclusives{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.exclusives div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.exclusives div{
+    position: relative;
+
+}
+
+.exclusives div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #020207;
+}
+
+/************* Trending Places ***********************/
+
+.trending{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.trending div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.trending h3{
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
+.cta{
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #563331, transparent), url(images/banner-2.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    padding: 5%;
+    color: darkcyan;
+}
+
+.cta h3{
+    font-size: 5vw;
+    line-height: 5.5vw;
+    font-weight: 600;
+
+}
+
+.cta p{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.cta-btn{
+    background: #549f9f;
+    color: #967371;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/***********Stories experience *************/
+
+.stories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+
+}
+
+.stories div img{
+    width:100%;
+    border-radius: 10px;
+}
+
+.stories div{
+    position: relative;
+    text-align: center;
+}
+
+.stories p{
+    width: 80%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 28px;
+    color: #772621;
+}
+
+.start-btn{
+    text-decoration: none;
+    background: #563331;
+    color: darkcyan;
+    width: 80%;
+    max-width: 350px;
+    display: block;
+    text-align: center;
+    margin: 60px auto;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 20px;
+
+}
+
+.about-msg{
+    text-align: center;
+    margin: 80px 0;
+    color: #6ba8a8;
+    font-size: 19px;
+}
+
+.about-msg h2{
+    font-size: 30px;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+
+
+/*************** Footer styling here! *********************/
+
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+
+}
+
+.footer a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #563331;
+    margin: 0 10px;
+}
+
+.footer hr{
+    background: #563331;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 22px 0;
+}
+
+
+.footer p{
+    padding-bottom: 18px;
+}
+
+.active{
+    position: relative;
+
+}
+
+.active::after{
+    content: '';
+    background: #563331;
+    width: 27px;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    border-radius: 3px;
+}
+
+nav .fa-bars{
+    display: none;
+
+}
+
+/*** listing page */
+
+.navbar-white{
+    background: white;
+    box-shadow: 0 7px 12px rgba(0,0,0,0.5);
+}
+
+.navbar-white .nav-links li a{
+    color: black;
+}
+
+.navbar-white .register-btn{
+    background: #772621;
+    color: white;
+}
+
+nav .navbar-white .nav.fa-bars{
+    color: #a2c9c9;
+
+}
+
+.navbar-white .active::after{
+    background: #549f9f;
+}
+
+
+.list-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-col{
+    flex-basis: 70%;
+}
+
+.right-col{
+    flex-basis: 25%;
+}
+
+.left-col h1{
+    color: antiquewhite;
+    font-weight: 600;
+    margin-bottom: 30px;
+    }
+
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+
+.house-img{
+    flex-basis: 40%;
+}
+
+.house-info{
+    flex-basis: 57%;
+    color: #772621;
+}
+
+.house-img img{
+    width: 100%;
+
+    border-radius: 13px;
+}
+
+.house-info h3{
+    font-weight: 600;
+    color: blue;
+    font-size: 25px;
+    margin: 4px 0;
+}
+
+
+.house-info i{
+    color: aquamarine;
+    font-size: 20px;
+    margin: 10px 2px;
+}
+
+.house-price{
+    text-align: right;
+
+}
+
+.house-price h4{
+    font-size: 20px;
+}
+
+.house-price h4 span{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sidebar{
+    border: 1px solid #999;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+
+.sidebar h2{
+    font-weight: 500;
+}
+
+.sidebar h3{
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.filter p{
+    flex: 1;
+}
+
+.filter input{
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+
+.sidebar-link{
+    text-align: right;
+    margin: 20px 0;
+}
+
+.sidebar-link a{
+    text-decoration: none;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.pagination img{
+    width: 15px;
+    margin: 10px 20px;
+}
+
+.right-arrow{
+    transform: rotate(180deg);
+}
+
+.pagination span{
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pagination .current{
+    background: #333;
+    color: white;
+}
+
+/* ----------------- house detail page ************/
+
+.house-details{
+    padding: 0 12%;
+
+}
+
+.house-title{
+    margin-top: 50px;
+}
+
+.house-title h1{
+    font-weight: 600;
+}
+
+.house-title .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.house-title span{
+    margin: 0 20px;
+}
+
+.house-title i{
+    color: darkgrey;
+    font-size: 15px;
+}
+
+.gallery{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 'first first . .' 'first first . .';
+    margin: 20px 0;
+}
+
+.gallery div img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.gallery-img-1{
+    grid-area: first;
+}
+
+.small-details h2{
+    font-weight: 500;
+}
+
+.small-details h4{
+    text-align: right;
+    font-size: 24px;
+}
+
+.line{
+    border: 0;
+    height: 1px;
+    background: #ccbebe;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0 50px;
+}
+
+.check-form{
+    margin: 30px 0;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.check-form label{
+    display: block;
+}
+
+.check-form div{
+    padding: 20px;
+}
+
+.check-form input{
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+
+.check-form button{
+    background: #ff5361;
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 18px;
+    width: 350px;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+.guest-field{
+    flex: 1;
+}
+
+.details-list{
+    list-style: none;
+    margin: 50px 0;
+}
+
+.details-list li{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    color: #262525;
+    position: relative;
+}
+
+.details-list li span{
+    display: block;
+    font-weight: 250;
+    font-size: 18px;
+}
+
+.details-list i{
+    position: absolute;
+    top:5px;
+    left:-40px
+}
+
+.home-desc{
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.map{
+    margin: 50px 0;
+
+}
+
+.map iframe{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.map h3{
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.map b{
+    display: block;
+    margin-bottom: 14px;
+}
+
+.host{
+    display: flex;
+    align-items: center;
+}
+
+.host img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 33px;
+}
+
+.host h2{
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.host i{
+    color: #563331;
+}
+
+.contact-host{
+    display: inline-block;
+    margin: 40px 0 40px 120px;
+    text-decoration: none;
+    color: #772621;
+    padding: 15px 50px;
+    border: 2px solid mediumvioletred;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 700px){
+    .gallery{
+        grid-template-areas: 'first first' '. .' '. .';
+    }
+}
